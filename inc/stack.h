@@ -9,15 +9,13 @@
 
 // #define MAX_STACK_SIZE 100
 
-typedef struct  Node{
+typedef struct  STK_Node{
     void *value;
-    struct Node *previous;
-    struct Node *next;
-}Node_t;
+    struct STK_Node *previous;
+}STK_Node;
 
 typedef struct Stack{
-    Node_t* top;
-    // int size; --> For max size;
+    STK_Node* top;
 }Stack_t;
 
 Stack_t *init_stack();
